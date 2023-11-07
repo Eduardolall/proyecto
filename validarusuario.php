@@ -18,7 +18,7 @@ if($_SERVER['REQUEST_METHOD']){
         if($user){
             $jwt = JWT::create($user, Config::SECRET, 60*60*24*30);
         //echo json_encode(["user"=>$user, "jwt"=>$jwt]);
-            ?> <meta http-equiv="refresh" content="0;URL=index1.php" > <?php 
+            ?> <meta http-equiv="refresh" content="0;URL=index.php" > <?php 
         }else{
         
             header("HTTP/1.1 401 Unauthorized");
